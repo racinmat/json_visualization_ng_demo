@@ -1,0 +1,7 @@
+<app-expander>
+  <div class="element color_{{level % 10}}" *ngFor="let key of keys ">
+    {{ key }}:
+    <app-show *ngIf="!isScalar(_data[key])" [data]="_data[key]" [level]="level+1"></app-show>
+    <span *ngIf="isScalar(_data[key])">{{ _data[key] }}</span>
+  </div>
+</app-expander>
