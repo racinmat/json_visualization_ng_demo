@@ -14,7 +14,6 @@ export class SchemaService {
   }
 
   getJSON(): Observable<any> {
-    return this.http.get("./assets/my_boi.json");
-    // return this.http.get("./assets/smol_boi.json");
+    return this.http.get("./assets/reddit_cuckoo_schema.json");
   }
 }
